@@ -1,3 +1,5 @@
+FROM openjdk:8-jdk-alpine
+
 RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
 
